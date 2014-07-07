@@ -1,0 +1,127 @@
+\documentclass[jp]{nctam_proceeding}
+
+\usepackage{graphicx}
+
+
+\titlejp{理論応用力学講演会講演論文集原稿執筆要領}
+\title{Instructions for Preparation of Manuscript for NCTAM}
+\subtitlejp{\LaTeX により} % Optional
+\subtitle{With \LaTeX}   % Optional
+\authorjp{理論　花子（固体大・理）\quad 応用　太郎（流体大・工）}
+\author{Hanako RIRON, Solids University\\
+        Taro OUYOU, Fluids University}
+\fax{01-2345-6789}
+\email{your_email@domain.com}
+\abstract{%
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+}
+
+\begin{document}
+\maketitle
+\section{Basic Requirements by NCTAM}
+\subsection{Paper Size, Number of Pages, and Margins}
+\begin{itemize}
+   \item Paper size: A4 paper (height 297mm, width 210mm)
+   \item Number of pages: 2
+   \item Margins:
+   \begin{itemize}
+      \item Top : 30mm
+      \item Bottom : 24mm
+      \item Left/right: 19mm
+   \end{itemize}
+\end{itemize}
+
+\subsection{Title, Authors, Affiliations, Contacts and Abstract}
+\begin{itemize}
+   \item Font size for main title: 12pt
+   \item Abstract has extra left/right margin of 5em
+   \item Use option \texttt{jp} for the class-file if the content
+      is will be written in Japanese so that ``References''
+      is replaced with ``参考文献'' in bibliography.
+\end{itemize}
+
+\subsection{Figures and Tables}
+\begin{itemize}
+   \item Captions should be written in \emph{English}
+   \item Caption for figure should be placed below the figure
+      (see Fig.~\ref{fig:ex})
+   \item Caption for table should be placed above the table
+      (see Table~\ref{table:ex})
+\end{itemize}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.5\linewidth]{samplefig.eps}
+\caption{Example of a figure.}
+\label{fig:ex}
+\end{figure}
+
+
+\begin{table}[!ht]
+\caption{Example of a table.}
+\label{table:ex}
+\centering
+\begin{tabular}{ ccccccccc }
+   \hline
+   A & B & C & D & E & F & G & H & I\\
+   \hline
+   1 & 2 & 3 & 1 & 2 & 3 & 1 & 2 & 3  \\
+   4 & 5 & 6 & 4 & 5 & 6 & 4 & 5 & 6  \\
+   7 & 8 & 9 & 7 & 8 & 9 & 7 & 8 & 9  \\
+   \hline
+\end{tabular}
+\end{table}
+
+\subsection{Citation}
+Style: superscript with single closing-parenthesis after the number,
+e.g.\ \cite{greenwade93}.
+
+\section{Equations}
+The Navier-Stokes equation
+\begin{equation}
+{\partial{\bf u}\over{\partial t}} + ({\bf u} \cdot \nabla) {\bf u} = - {1\over\rho} \nabla p + \gamma\nabla^2{\bf u} + {1\over\rho}{\bf F}.\label{eq:ns}
+\end{equation}
+Referring an equation can be done with \verb|Eq.~(\ref{eq:ns})| which gives:
+Eq.~(\ref{eq:ns}).
+
+\section{Text formating}
+Lorem ipsum dolor sit amet, \textbf{consectetur} adipisicing \emph{elit}, sed do eiusmod
+tempor incididunt ut \texttt{labore} et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation \textit{ullamco} laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Listings}
+\subsection{Itemize}
+\begin{itemize}
+   \item Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   tempor incididunt ut labore et dolore magna aliqua.\cite{AbedonHymanThomas2003}
+   \item Ut enim ad minim veniam,
+   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   cillum dolore eu fugiat nulla pariatur.
+   \item Excepteur sint occaecat cupidatat non
+   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{itemize}
+
+\subsection{Enumerate}
+\begin{enumerate}
+   \item Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   tempor incididunt ut labore et dolore magna aliqua.
+   \item Ut enim ad minim veniam,
+   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   cillum dolore eu fugiat nulla pariatur.
+   \item Excepteur sint occaecat cupidatat non
+   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\cite{website:fermentas-lambda}
+\end{enumerate}
+
+\bibliographystyle{nctam_proceeding}
+\bibliography{references}
+\end{document}
