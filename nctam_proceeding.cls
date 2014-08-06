@@ -3,7 +3,7 @@
 %%  Last modified: 2014-Jul-03
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nctam_manuscript}[2014/07/01 NCTAM Manuscript Class]
+\ProvidesClass{nctam_proceeding}[2014/07/01 NCTAM Manuscript Class]
 
 %% Based on the article-class
 \LoadClass[twocolumn]{article}
