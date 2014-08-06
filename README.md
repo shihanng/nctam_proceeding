@@ -10,6 +10,14 @@ in your TeX-file. For the reference style:
 ```
 The option `jp` is for those who plan to write the proceeding in Japanese: it replaces "References"  will be replaced with "参考文献" in the bibliography section. Remove it if you plan to write the manuscript in English.
 
+### Dependency
+We are using
+```TeX
+\RequirePackage{url}
+\RequirePackage[compact]{titlesec}
+```
+in `nctam_proceeding.cls`.
+
 ### Sample
 Use the sample TeX-file (`sample.tex`) to see how the class-file is used.
 Compile the file with `platex` + `dvipdfmx`:
