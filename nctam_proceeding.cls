@@ -35,6 +35,7 @@
 \ProcessOptions\relax
 
 \RequirePackage{url}
+\RequirePackage[compact]{titlesec}
 
 %%
 %% --Page layout
@@ -50,27 +51,14 @@
 \pagestyle{empty} % Hide page number
 
 %% Sections
-\renewcommand\section{\@startsection {section}{1}{\z@}%
-                                     {2.5ex \@plus -1ex \@minus -.2ex}%
-                                     {0.1ex \@plus.2ex}%
-                                     {\normalfont\normalsize\bfseries}}
-\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
-                                       {2.5ex\@plus -1ex \@minus -.2ex}%
-                                       {0.1ex \@plus .2ex}%
-                                       {\normalfont\normalsize\bfseries}}
-\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
-                                       {2.5ex\@plus -1ex \@minus -.2ex}%
-                                       {0.1ex \@plus .2ex}%
-                                       {\normalfont\normalsize\bfseries}}
-\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
-                                      {2.5ex \@plus1ex \@minus.2ex}%
-                                      {-1em}%
-                                      {\normalfont\normalsize\bfseries}}
-\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
-                                         {2.5ex \@plus1ex \@minus .2ex}%
-                                         {-1em}%
-                                         {\normalfont\normalsize\bfseries}}
-
+\titlespacing{\section}{0pt}{*0}{*0}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat*{\section}{\normalfont\normalsize\bfseries}
+\titleformat*{\subsection}{\normalfont\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalfont\normalsize\bfseries}
+\titleformat*{\paragraph}{\normalfont\normalsize\bfseries}
+\titleformat*{\subparagraph}{\normalfont\normalsize\bfseries}
 
 
 %%
